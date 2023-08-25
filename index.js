@@ -15,7 +15,7 @@ app.post('/tradingview/alert', (req, res) => {
   console.log('Received TradingView Alert:', alertData);
   
   // Send a response
-  res.status(200).json({ message: alertData});
+  res.status(200).json(alertData);
 });
 
 app.listen(PORT, () => {
